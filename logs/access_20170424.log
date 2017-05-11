@@ -1,0 +1,42 @@
+[2017-04-24 17:15:26.345] [INFO] console - Happy[1]: Version: 3.0.3. Using cache? yes. Threads: 3
+[2017-04-24 17:15:26.487] [INFO] console - Happy[1]: Loaded 428 entries from cache. (0 were stale)
+[2017-04-24 17:15:26.706] [INFO] console - Happy[1]: All set; signalling webpack to proceed.
+[2017-04-24 17:15:26.716] [INFO] console - webpack building...
+[2017-04-24 17:15:43.610] [INFO] console - webpack built 2de1b14570d8708dc3ca in 17245ms
+[2017-04-24 17:15:43.767] [INFO] console - /admin
+[2017-04-24 17:15:43.770] [INFO] ::1 - GET /admin Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+[2017-04-24 17:15:43.954] [INFO] console - 1
+[2017-04-24 17:15:55.537] [ERROR] console - Connection Error: { MongoError: failed to connect to server [120.25.241.110:20000] on first connect
+    at Pool.<anonymous> (/Users/creator/workspace/furuida/node_modules/mongodb-core/lib/topologies/server.js:326:35)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (/Users/creator/workspace/furuida/node_modules/mongodb-core/lib/connection/pool.js:270:12)
+    at Connection.g (events.js:291:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (/Users/creator/workspace/furuida/node_modules/mongodb-core/lib/connection/connection.js:185:10)
+    at Socket.g (events.js:291:16)
+    at emitNone (events.js:86:13)
+    at Socket.emit (events.js:185:7)
+    at Socket._onTimeout (net.js:339:8)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+  name: 'MongoError',
+  message: 'failed to connect to server [120.25.241.110:20000] on first connect' }
+[2017-04-24 17:15:55.601] [WARN] console - Unhandled rejection MongoError: failed to connect to server [120.25.241.110:20000] on first connect
+    at Pool.<anonymous> (/Users/creator/workspace/furuida/node_modules/mongodb-core/lib/topologies/server.js:326:35)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (/Users/creator/workspace/furuida/node_modules/mongodb-core/lib/connection/pool.js:270:12)
+    at Connection.g (events.js:291:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (/Users/creator/workspace/furuida/node_modules/mongodb-core/lib/connection/connection.js:185:10)
+    at Socket.g (events.js:291:16)
+    at emitNone (events.js:86:13)
+    at Socket.emit (events.js:185:7)
+    at Socket._onTimeout (net.js:339:8)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)

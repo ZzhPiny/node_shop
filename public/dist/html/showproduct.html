@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/js/components/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/js/components/swiper/dist/css/swiper.min.css' />
+    <link rel='stylesheet' href='/css/style.css' />
+    <script type="text/javascript" src="/js/vendor.js"></script>
+</head>
+
+<body>
+    <% include tpl/header.html %>
+    <% include tpl/nav.html %>
+    <section class="product-container"></section>
+
+    <div class="met-position  pattern-show">
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/" title="首页"><i class="glyphicon glyphicon-home" aria-hidden="true"></i> 首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:;" title="产品中心" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> 产品中心 <!-- <i class="caret"></i>  --></a>
+                        <!-- <ul class="dropdown-menu animate">
+                            <li>
+                                <a href="../product/"  title="全部">全部</a>
+                            </li>
+                            <li>
+                                <a href="../product/product.php?lang=cn&class2=110" title="工作装置">工作装置</a>
+                            </li>
+                            <li>
+                                <a href="../product/product.php?lang=cn&class2=105" title="变速装置">变速装置</a>
+                            </li>
+                            <li>
+                                <a href="../product/product.php?lang=cn&class2=106" title="传动装置">传动装置</a>
+                            </li>
+                            <li>
+                                <a href="../product/product.php?lang=cn&class2=104" title="驱动装置">驱动装置</a>
+                            </li>
+                            <li>
+                                <a href="../product/product.php?lang=cn&class2=107" title="制动装置">制动装置</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="../product/product.php?lang=cn&class2=110" title="工作装置">工作装置</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="page met-showproduct pagetype1 animsition">
+        <div class="met-showproduct-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div id="gallery" class="ad-gallery" data-x="320" data-y="350">
+                            <div class="ad-image-wrapper"></div>
+                            <div class="ad-controls"></div>
+                            <div class="ad-nav">
+                                <div class="ad-thumbs">
+                                    <ul class="ad-thumb-list" id="lightgallery">
+                                        <li data-src="" data-exthumbimage="">
+                                            <a href="">
+                                                <img src="/upload/images/banner_1.jpg" class="img-responsive" alt="机械 发动机" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visible-xs-block visible-sm-block height-20"></div>
+                    <div class="col-md-5 product-intro">
+                        <h1><%= productInfo.productName %></h1>
+                        <p class="description">
+                            <%- productInfo.description %>
+                            
+                        </p>
+                        <div class="para">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-15 blue-grey-500">型号 : <%= productInfo.size %></div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-15 blue-grey-500">品牌 : GuoHao A1</div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-15 blue-grey-500">价格 : <%= productInfo.price %></div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-15 blue-grey-500">尺寸 : 130cm * 103cm * 132cm</div>
+                            </div>
+                        </div>
+                        <div class="tools"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="met-showproduct-body">
+            <div class="container">
+                <div class="row no-space">
+                    <div class="col-md-9 product-content-body">
+                        <div class="row">
+                            <div class="panel product-detail">
+                                <div class="panel-body">
+                                    <ul class="nav nav-tabs nav-tabs-line met-showproduct-navtabs affix-nav">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#product-details" data-get="product-details">详细信息</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane met-editor lazyload clearfix animation-fade active" id="product-details">
+                                            <div>
+                                                <p><img src="/upload/images/banner_1.jpg" data-original="../upload/201611/1478704662119998.jpg" style="" title="1478704662119998.jpg"/ alt="图片关键词"></p>
+                                                <p><img src="/upload/images/banner_1.jpg" data-original="../upload/201611/1478704662792387.jpg" style="" title="1478704662792387.jpg"/ alt="图片关键词"></p>
+                                                <p><img src="/upload/images/banner_1.jpg" data-original="../upload/201611/1478704662114894.jpg" style="" title="1478704662114894.jpg"/ alt="图片关键词"></p>
+                                                <p><img src="/upload/images/banner_1.jpg" data-original="../upload/201611/1478704662739286.jpg" style="" title="1478704662739286.jpg"/ alt="图片关键词"></p>
+                                                <p><br/></p>
+                                                <div id="metinfo_additional"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--右侧开始-->
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="panel product-hot">
+                                <div class="panel-body">
+                                    <h4 class="example-title">热门推荐</h4>
+                                    <div class="row">
+                                        <div class="product-hot-list col-md-12 col-sm-4 col-xs-4 text-center margin-bottom-10">
+                                            <a href="../product/showproduct.php?lang=cn&id=49" target="_blank" class="img" title="机械 发动机"><img src="/upload/images/banner_1.jpg" data-original="../include/thumb.php?dir=../upload/201611/1478233612.jpg&x=250&y=250" class="img-responsive" alt="机械 发动机"></a>
+                                            <a href="../product/showproduct.php?lang=cn&id=49" target="_blank" class="txt" title="机械 发动机">机械 发动机</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--右侧结束--> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <% include tpl/footer.html %>
+    <script type="text/javascript" src="/js/showproduct.js"></script>
+</body>
+
+</html>

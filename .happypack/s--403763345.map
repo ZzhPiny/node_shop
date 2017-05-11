@@ -1,0 +1,1 @@
+{"version":3,"sources":["public/src/js/product/showproduct.js"],"names":["define","initNav"],"mappings":";;AAAAA,OAAO,CACH,mBADG,CAAP,EAEG,UAASC,OAAT,EAAkB;AACjBA;AACH,CAJD","file":"showproduct.js","sourceRoot":"/Users/creator/workspace/furuida","sourcesContent":["define([\n    'module/navigation'\n], function(initNav) {\n    initNav();\n})"]}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/js/components/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/js/components/swiper/dist/css/swiper.min.css' />
+    <link rel='stylesheet' href='/css/style.css' />
+    <script type="text/javascript" src="/js/vendor.js"></script>
+</head>
+
+<body>
+    <% include tpl/header.html %>
+    <% include tpl/nav.html %>
+    <section class="banner-container">
+        <div id="swiper-banner" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/images/banners/banner_1.jpg" /></div>
+                <div class="swiper-slide"><img src="/images/banners/banner_2.jpg" /></div>
+                <div class="swiper-slide"><img src="/images/banners/banner_3.jpg" /></div>
+            </div>
+            <!-- <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </section>
+    <section class="product-container">
+    </section>
+    <% include tpl/footer.html %>
+    <script type="text/javascript" src="/js/product.js"></script>
+</body>
+</html>

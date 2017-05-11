@@ -1,0 +1,130 @@
+
+/*产品展示*/
+.classify-title, .product-title {
+    /*width: 100%;*/
+    height: 50px;
+    padding: 10px 20px;
+    line-height: 30px;
+    /*text-align: left;*/
+}
+
+.classify-title {
+    width: 200px;
+    height: 50px;
+    background: #000;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.classify-title:before {
+    content: '';
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    left: 20px;
+    border-width: 0 0 50px 20px;
+    border-color: transparent transparent #000 transparent;
+    border-style: solid;
+}
+
+.classify-title:after {
+    content: '';
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    right: 20px;
+    border-width: 50px 20px 0 0;
+    border-color: #000 transparent transparent transparent;
+    border-style: solid;
+}
+
+.classify-title:hover {
+    background: #FB4848;
+}
+
+.classify-title:hover:before{
+    border-bottom-color: #FB4848;
+}
+.classify-title:hover:after {
+    border-top-color: #FB4848;
+}
+
+.classify-group {
+    /*shadow-box: outside 1px 1px 1px 1px;*/
+}
+.classify-item {
+    /*border: 1px solid #FB4848;*/
+    border-radius: 0;
+    background: #FFF;
+    border: none;
+    padding: 0;
+    color: #E1E1E1;
+}
+.classify-item:hover{
+    background: #FB4848;
+    color: #FFF;
+}
+
+li.classify-item a {
+    color: #333;
+}
+
+li.classify-item:hover a {
+    color: #FFF;
+}
+
+.product-group {
+    overflow: hidden;
+}
+
+.product-group .product-item {
+    /*float: left;*/
+    /*width: 33.33%;*/
+    /*height: 150px;*/
+    /*line-height: 150px;*/
+    text-align: center;
+    /*border: 1px solid #fb4848;*/
+    padding-bottom: 15px;
+}
+
+.product-group .product-item .product-img{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #fff;
+    border-bottom: none;
+    overflow: hidden;
+    background: #fff;
+}
+
+.product-group .product-item .product-img img{
+    width: 100%;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.product-group .product-item .product-img:hover img{
+    width: 150%;
+    margin-left: -25%;
+    margin-top: -25%;
+    transition: 1s ease-in-out;
+}
+
+.product-group .product-item a.product-link {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #eee;
+    /*border-top: none;*/
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #818181;
+    font-weight: 400;
+    background: #fff;
+    text-decoration: none;
+}
+.product-group .product-item a.product-link:hover {
+    background: #FB4848;
+    color: #FFF;
+}

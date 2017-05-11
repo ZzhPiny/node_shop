@@ -1,0 +1,14 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.getNav = getNav;
+var NAV = exports.NAV = 'NAV';
+
+function getNav(data) {
+    return {
+        type: NAV,
+        data: data
+    };
+}

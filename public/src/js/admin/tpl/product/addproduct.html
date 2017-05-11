@@ -1,0 +1,153 @@
+
+<style type="text/css">
+.affix{
+    top:60px;
+}
+.header-title{
+    position: absolute;
+    left:200px;
+    right:200px;
+    top:0;
+    bottom:0;
+    text-align: center;
+    line-height: 50px;
+    font-size:20px;
+}    
+</style>
+<!-- Start: Topbar -->
+<header id="topbar" class="ph10 affix">
+    <div class="topbar-left">
+        <ul class="nav nav-list nav-list-topbar pull-left">
+            <li>
+                <a href="#!/product/classify"><span class="fa fa-angle-left"></span>返回</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-title"></div>
+    <div class="topbar-right hidden-xs hidden-sm">
+        <a href="#!/product/list/add" id="save-top" class="btn btn-default btn-sm fw600 ml10 add-product">
+            <span class="fa fa-plus pr5"></span>保存
+        </a>
+        <a href="javascript:;" id="clean-input" class="btn btn-default btn-sm fw600 ml10">
+            <span class="fa fa-minus pr5"></span>清空
+        </a>
+
+    </div>
+</header>
+<!-- End: Topbar -->
+
+<!-- Begin: Content -->
+<div id="content" class="animated fadeIn">
+<!-- create new order panel -->
+  <div class="panel mb25 mt5">
+    <div class="panel-heading">
+      <span class="panel-title hidden-xs">新增商品</span>
+    </div>
+    <div class="panel-body p20 pb10">
+      <div class="tab-content pn br-n admin-form">
+          <div class="section row">
+            <div class="col-md-6">
+              <label for="product-name" class="field prepend-icon">
+                <input type="text" name="product-name" id="product-name" class="gui-input" placeholder="产品名称">
+                <label for="product-price" class="field-icon">
+                  <i class="fa fa-leaf"></i>
+                </label>
+              </label>
+            </div>
+            <!-- end section -->
+
+            <div class="col-md-6">
+              <label class="field select">
+                <select id="product-classify" name="product-status"></select>
+                <i class="arrow double"></i>
+              </label>
+            </div>
+            <!-- end section -->
+
+          </div>
+          <!-- end section row section -->
+
+          <div class="section row">
+            <div class="col-md-4">
+              <label for="product-price" class="field prepend-icon">
+                <input type="text" name="product-price" id="product-price" class="gui-input" placeholder="产品价格">
+                <label for="product-price" class="field-icon">
+                  <i class="fa fa-cny"></i>
+                </label>
+              </label>
+            </div>
+            <!-- end section -->
+
+            <div class="col-md-4">
+              <label for="product-vendor" class="field prepend-icon">
+                <input type="text" name="product-vendor" id="product-vendor" class="gui-input" placeholder="">
+                <label for="product-vendor" class="field-icon">
+                  <i class="fa fa-shopping-cart"></i>
+                </label>
+              </label>
+            </div>
+            <!-- end section -->
+
+            <div class="col-md-4">
+              <label for="product-sku" class="field prepend-icon">
+                <input type="text" name="product-sku" id="product-sku" class="gui-input" placeholder="">
+                <label for="product-sku" class="field-icon">
+                  <i class="fa fa-barcode"></i>
+                </label>
+              </label>
+            </div>
+            <!-- end section -->
+          </div>
+
+          <hr class="short alt">
+          
+          <div class="section row mbn">
+            <div class="col-md-4">
+              <div class="fileupload fileupload-new admin-form" data-provides="fileupload">
+                <div class="fileupload-preview thumbnail mb20">
+                  <img data-src="" alt="holder">
+                </div>
+                <div class="row">
+                  <div class="col-xs-7 pr5">
+                    <input type="text" name="name2" id="name2" class="text-center event-name gui-input br-light bg-light" placeholder="关键字">
+                    <label for="name2" class="field-icon"></label>
+                  </div>
+                  <div class="col-xs-5">
+                    <span class="button btn-system btn-file btn-block">
+                      <span class="fileupload-new">选择</span>
+                      <span class="fileupload-exists">更改</span>
+                      <input type="file">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 pl15">
+              <div class="section mb10">
+                <label class="field prepend-icon">
+                  <textarea style="height: 160px;" class="gui-textarea br-light bg-light" id="comment" name="comment" placeholder="商品描述"></textarea>
+                  <label for="comment" class="field-icon">
+                    <i class="fa fa-comments"></i>
+                  </label>
+<!--                   <span class="input-footer ">
+                    <strong>Hint:</strong>Don't be negative or off topic! just be awesome...</span> -->
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="section row mbn">
+            <div class="col-sm-8">
+            </div>
+            <div class="col-sm-4">
+              <p class="text-right">
+                <button class="btn btn-primary add-product" type="button" id="save-bottom">保存</button>
+              </p>
+            </div>
+          </div>
+          <!-- end section -->
+        </div>
+    </div>
+  </div>
+
+</div>
+<!-- End: Content -->

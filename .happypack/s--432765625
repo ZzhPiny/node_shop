@@ -1,0 +1,42 @@
+SyntaxError: Unexpected token (6:15)
+
+  4 | import nav from './nav';
+  5 | 
+> 6 | export defalut var reducers = combineReducers({
+    |                ^
+  7 |     nav: nav,
+  8 |     routing: routerReducer
+  9 | })
+
+BabelLoaderError: SyntaxError: Unexpected token (6:15)
+
+  4 | import nav from './nav';
+  5 | 
+> 6 | export defalut var reducers = combineReducers({
+    |                ^
+  7 |     nav: nav,
+  8 |     routing: routerReducer
+  9 | })
+
+    at transpile (/Users/creator/workspace/furuida/node_modules/babel-loader/lib/index.js:61:13)
+    at Object.module.exports (/Users/creator/workspace/furuida/node_modules/babel-loader/lib/index.js:155:20)
+    at applySyncOrAsync (/Users/creator/workspace/furuida/node_modules/happypack/lib/applyLoaders.js:341:21)
+    at apply (/Users/creator/workspace/furuida/node_modules/happypack/lib/applyLoaders.js:268:5)
+    at /Users/creator/workspace/furuida/node_modules/happypack/lib/applyLoaders.js:131:7
+    at applyPitchLoader (/Users/creator/workspace/furuida/node_modules/happypack/lib/applyLoaders.js:184:14)
+    at applyPitchLoader (/Users/creator/workspace/furuida/node_modules/happypack/lib/applyLoaders.js:192:14)
+    at applyPitchLoaders (/Users/creator/workspace/furuida/node_modules/happypack/lib/applyLoaders.js:222:4)
+    at applyLoaders (/Users/creator/workspace/furuida/node_modules/happypack/lib/applyLoaders.js:116:3)
+    at HappyWorker.compile (/Users/creator/workspace/furuida/node_modules/happypack/lib/HappyWorker.js:32:3)
+    at Object.compile (/Users/creator/workspace/furuida/node_modules/happypack/lib/HappyForegroundThreadPool.js:61:14)
+    at HappyPlugin.compileAndUpdateCache (/Users/creator/workspace/furuida/node_modules/happypack/lib/HappyPlugin.js:344:14)
+    at HappyPlugin.compileInForeground (/Users/creator/workspace/furuida/node_modules/happypack/lib/HappyPlugin.js:321:25)
+    at HappyPlugin.compile (/Users/creator/workspace/furuida/node_modules/happypack/lib/HappyPlugin.js:237:32)
+    at Object.HappyLoader (/Users/creator/workspace/furuida/node_modules/happypack/lib/HappyLoader.js:42:15)
+    at LOADER_EXECUTION (/Users/creator/workspace/furuida/node_modules/loader-runner/lib/LoaderRunner.js:119:14)
+    at runSyncOrAsync (/Users/creator/workspace/furuida/node_modules/loader-runner/lib/LoaderRunner.js:120:4)
+    at iterateNormalLoaders (/Users/creator/workspace/furuida/node_modules/loader-runner/lib/LoaderRunner.js:229:2)
+    at Array.<anonymous> (/Users/creator/workspace/furuida/node_modules/loader-runner/lib/LoaderRunner.js:202:4)
+    at Storage.finished (/Users/creator/workspace/furuida/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:38:15)
+    at /Users/creator/workspace/furuida/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:69:9
+    at /Users/creator/workspace/furuida/node_modules/graceful-fs/graceful-fs.js:78:16
