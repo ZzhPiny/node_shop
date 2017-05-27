@@ -1,1 +1,0 @@
-{"version":3,"sources":["node_modules/antd/lib/icon/style/index.js"],"names":["require"],"mappings":"AAAA;;AAEAA,QAAQ,wBAAR","file":"index.js","sourceRoot":"/Users/creator/workspace/furuida","sourcesContent":["'use strict';\n\nrequire('../../style/index.less');"]}

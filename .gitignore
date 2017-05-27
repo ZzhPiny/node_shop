@@ -1,1 +1,5 @@
-"/node_module/*", "/logs/", "/public/dist/*"
+#common ignore file
+/node_module/*
+/logs/*
+/public/dist/*
+/.happypack/*
