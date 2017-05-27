@@ -1,1 +1,4 @@
-"/node_module/*", "/logs/*", "/public/dist/*", "/.happypack/*"
+/node_module/*
+/logs/*
+/public/dist/*
+/.happypack/*
