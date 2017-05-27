@@ -1,1 +1,0 @@
-{"version":3,"sources":["node_modules/rc-animate/lib/index.js"],"names":["module","exports","require"],"mappings":"AAAA;;AAEA;;AACAA,OAAOC,OAAP,GAAiBC,QAAQ,WAAR,CAAjB","file":"index.js","sourceRoot":"/Users/creator/workspace/furuida","sourcesContent":["'use strict';\n\n// export this package's api\nmodule.exports = require('./Animate');"]}
