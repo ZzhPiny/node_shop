@@ -1,3 +1,4 @@
+#common ignore file
 /node_module/*
 /logs/*
 /public/dist/*
