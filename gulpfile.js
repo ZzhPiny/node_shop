@@ -13,7 +13,7 @@ var revCollector = require('gulp-rev-collector');
 var domain = 'http://localhost:3000';
 
 gulp.task('css', () => {
-    var path = ['public/src/css/**/*.css'];
+    var path = ['public/src/css/**/*.css', 'public/src/css/**/*.scss'];
     return gulp.src(path)
         // .pipe(watch(path, {}, logger))
         // .pipe(rev())
@@ -52,7 +52,8 @@ gulp.task('images', (cb) => {
     var path = [
         'public/src/images/**/*.jpg',
         'public/src/images/**/*.png',
-        'public/src/images/**/*.gif'
+        'public/src/images/**/*.gif',
+        'public/src/images/**/*.jpeg'
     ];
     return gulp.src(path)
         .pipe(watch(path))

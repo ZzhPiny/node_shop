@@ -13,19 +13,14 @@ const logger = require('./showlog');
 
 function middleware(opts){
 
-    // opts = {
-        
-    // }
-
     return function(req, res, next) {
         _.extend(req.query, req.body);
         _.extend(req.query, req.params);
         var showLog = logger(req);
-        showLog.begin();
-
 
         var send = res.send;
         var render = res.render;
+
         res.render = function(page, data, callback) {
             // if(_.isFunction(data)) {
             //     callback = data;
@@ -36,9 +31,11 @@ function middleware(opts){
             // }
             // data = _.extend(data, {root: ""})
             render.call(res, page, data);
-            showLog.end(data);
+            showLog(data);
         };
+        
         res.sendJSON = function(data) {
+
             if ( data instanceof Error){
                 var e = data;
                 data = {
@@ -47,7 +44,6 @@ function middleware(opts){
                     error: e
                 };
             } else {
-                // if(data.code)
                 data = {
                     code: 0,
                     message: "",
@@ -55,11 +51,8 @@ function middleware(opts){
                 }
             }
             send.call(res, data);
-            res.end();
-            showLog.end(data);
-
+            showLog(data);
         };
-
         next();
     };
 }
@@ -68,37 +61,5 @@ function verifUser(req, res) {
     var cookies = req.cookies;
     // return false;
 }
-
-function showLog(req) {
-
-    return {
-        begin: function() {
-
-        },
-        end: function(data) {
-
-        }
-    }
-}
-
-function showBeginLog(req) {
-    req.startTime = Date.now();
-    req._url = req.url;
-
-    logger("info").info(req.ip, req.method, req.headers['user-agent']);
-
-    winston.info('__________________________ Request ' + req._url + ' Start __________________________');
-    // winston.info('url: ', req._url);
-    winston.info('Method: ', req.method);
-    // winston.info('User-Agent: ', req.headers['user-agent']);
-    winston.info('requestData: ', JSON.stringify(req.query));
-}
-
-function showEndLog(req, data) {
-    winston.info('responseData: ', JSON.stringify(data));
-    winston.info('cost:', (Date.now() - req.startTime) + 'ms');
-    winston.info('__________________________ Request ' + req._url + ' End __________________________');
-}
-
 
 module.exports = middleware;

@@ -11,7 +11,7 @@ const config = {
             alwaysIncludePattern: true,
             backups: 4,
             // category: 'dateFileLog'
-        }//日期文件格式
+        } //日期文件格式
     ],
     replaceConsole: true,   //替换console.log
 };

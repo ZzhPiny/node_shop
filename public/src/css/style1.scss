@@ -1,0 +1,24 @@
+.logo {
+  width: 120px;
+  height: 31px;
+  background: #fff;
+  border-radius: 6px;
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+// banner
+.banner .ant-carousel .slick-slide {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  // line-height: 160px;
+  background: #364d79;
+  color: #fff;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+

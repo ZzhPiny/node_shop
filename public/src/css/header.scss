@@ -1,0 +1,49 @@
+/* header */
+.header {
+    background-color: #fff;
+    position: fixed;
+    height: auto;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    .title {
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1001;
+
+        .logo {
+            height: 100px;
+            width: 320px;
+            padding: 10px 0 10px 200px;
+            box-sizing: border-box;
+        }
+
+        .company-name {
+            position: absolute;
+            top: 0;
+            left: 320px;
+            padding: 20px 50px;
+            line-height: 60px;
+            font-size: 36px;
+        }
+    }
+    
+    .nav {
+        background-color: #fff;
+        position: relative;
+        height: 64px;
+        border-top: 1px solid #e9e9e9;
+        margin-top: 100px;
+
+        .logo {
+            width: 220px;
+            height: 64px;
+            background: #fff;
+            float: left;
+        }
+    }
+}

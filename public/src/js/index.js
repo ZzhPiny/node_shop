@@ -2,12 +2,23 @@ define([
     'module/navigation', 'swiper', 'module/pagination', 'tpl/tpl-classify-list', 'tpl/tpl-product-list', 'bootstrap'
 ], function(initNav, Swiper, pagination, classifyTpl, productTpl) {
     (function(){
+        fetch('/api/product/getIndexProduct', {
+            method: 'GET'
+        }).then(res => {
+            console.log(res);
+            return res.json();
+        }).then(resBlob => {
+            console.log(resBlob)
+        });
         initNav();
         initBanner();
         initProduct();
     })();
 
     function initClassNav() {
+        fetch('/api/product/getClassifyList').then(res => {
+            console.log(res);
+        })
         $.get("/api/product/getClassifyList").done(function(res) {
             if (res.code != 0)
                 return;
