@@ -2,9 +2,17 @@ const express = require('express');
 const router = express.Router();
 const Comment = require('../../database/model_comment');
 const _ = require("underscore");
+const Banner = require('../../database/model_banner');
 // router.all('/', (req, res) => {
 //     res.sendJSON(req._url)
 // })
+router.get('/banner', (req, res) => {
+    Banner.find().then(data => {
+        res.sendJSON(data);
+    }).catch(err => {
+        res.sendJSON(err);
+    });
+});
 
 router.get('/comments', function(req, res) {
     var commentPromise = Comment.find({});

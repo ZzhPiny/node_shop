@@ -22,12 +22,117 @@ export class NewsList extends Component {
                                 </Col>
                                 <Col span={18}>
                                     <div className="news-item-content" >
-                                        <p>Product Name</p>
-                                        <p>1234567890</p>
-                                        <p>
-                                            <time>2017-06-06</time>
-                                            <span>author</span>
-                                            <span>9999</span>
+                                        <p className="news-content-heading">
+                                            <a href="/"> Product Name </a>
+                                        </p>
+                                        <p className="news-content-body">
+                                            1234567890 <br />
+                                            1234567890 <br />
+                                            1234567890 <br />
+                                        </p>
+                                        <p className="news-content-footer">
+                                            <span className="news-content-time">2017-06-06</span>
+                                            <span className="news-content-author">author</span>
+                                            <span className="news-content-viewcount">
+                                                <Icon type="eye" style={{fontSize: '14px', marginRight: '4px'}}/>
+                                                9999
+                                            </span>
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </Col>
+                    <Col span={12}>
+                        <div className="news-item">
+                            <Row type="flex" justify="left">
+                                <Col span={6}>
+                                    <div className="news-item-image">
+                                        <img src='/upload/images/banner_1.jpg'/>
+                                    </div>
+                                </Col>
+                                <Col span={18}>
+                                    <div className="news-item-content" >
+                                        <p className="news-content-heading">
+                                            <a href="/"> Product Name </a>
+                                        </p>
+                                        <p className="news-content-body">1234567890</p>
+                                        <p className="news-content-footer">
+                                            <span className="news-content-time">2017-06-06</span>
+                                            <span className="news-content-author">author</span>
+                                            <span className="news-content-viewcount">9999</span>
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </Col>
+                    <Col span={12}>
+                        <div className="news-item">
+                            <Row type="flex" justify="left">
+                                <Col span={6}>
+                                    <div className="news-item-image">
+                                        <img src='/upload/images/banner_1.jpg'/>
+                                    </div>
+                                </Col>
+                                <Col span={18}>
+                                    <div className="news-item-content" >
+                                        <p className="news-content-heading">
+                                            <a href="/"> Product Name </a>
+                                        </p>
+                                        <p className="news-content-body">1234567890</p>
+                                        <p className="news-content-footer">
+                                            <span className="news-content-time">2017-06-06</span>
+                                            <span className="news-content-author">author</span>
+                                            <span className="news-content-viewcount">9999</span>
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </Col>
+                    <Col span={12}>
+                        <div className="news-item">
+                            <Row type="flex" justify="left">
+                                <Col span={6}>
+                                    <div className="news-item-image">
+                                        <img src='/upload/images/banner_1.jpg'/>
+                                    </div>
+                                </Col>
+                                <Col span={18}>
+                                    <div className="news-item-content" >
+                                        <p className="news-content-heading">
+                                            <a href="/"> Product Name </a>
+                                        </p>
+                                        <p className="news-content-body">1234567890</p>
+                                        <p className="news-content-footer">
+                                            <span className="news-content-time">2017-06-06</span>
+                                            <span className="news-content-author">author</span>
+                                            <span className="news-content-viewcount">9999</span>
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </Col>
+                    <Col span={12}>
+                        <div className="news-item">
+                            <Row type="flex" justify="left">
+                                <Col span={6}>
+                                    <div className="news-item-image">
+                                        <img src='/upload/images/banner_1.jpg'/>
+                                    </div>
+                                </Col>
+                                <Col span={18}>
+                                    <div className="news-item-content" >
+                                        <p className="news-content-heading">
+                                            <a href="/"> Product Name </a>
+                                        </p>
+                                        <p className="news-content-body">1234567890</p>
+                                        <p className="news-content-footer">
+                                            <span className="news-content-time">2017-06-06</span>
+                                            <span className="news-content-author">author</span>
+                                            <span className="news-content-viewcount">9999</span>
                                         </p>
                                     </div>
                                 </Col>

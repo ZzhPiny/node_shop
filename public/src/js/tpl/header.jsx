@@ -74,7 +74,7 @@ export default class extends Component {
                         <Menu.Item key="4"><a href="/">新闻中心</a></Menu.Item>
                         <Menu.Item key="5"><a href="/">售后服务</a></Menu.Item>
                         <Menu.Item key="6"><a href="/">在线留言</a></Menu.Item>
-                        <Menu.Item key="7"><a href="/">联系我们</a></Menu.Item>
+                        <Menu.Item key="7"><a href="/ ">联系我们</a></Menu.Item>
                     </Menu>
                 </div>
             </Header>

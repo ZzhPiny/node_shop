@@ -5,7 +5,7 @@ var getClassify = require('./module/getClassify');
 /* GET home page. */
 router.get('/', function(req, res, next) {
     getClassify(function(classifyData) {
-        res.render('index', { title: 'FuRuiDa', page: 'index' , nav: classifyData});
+        res.render('index', { title: '网站首页 - 江西艾麦达科技', page: 'index' , nav: classifyData});
     })
 });
 

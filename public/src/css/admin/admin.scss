@@ -13,7 +13,16 @@ $siderWidth: 240px;
 $borderColor: #e1e1e1;
 
 body {
-    background: $white;
+    // background: $white;
+    background: #e1e1e1;
+}
+
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .header {
@@ -30,7 +39,8 @@ body {
     z-index: 999;
 
     .title {
-        width: 240px;
+        // width: 240px;
+        height: 100%;
         // background: #5BC758;
         // color: $white;
         color: #333;
@@ -51,8 +61,10 @@ body {
     
     .sider {
         width: auto;
-        // background: #2C2C2C;
+        background: #fff;
+        // background: #404040;
         position: fixed;
+        overflow-y: auto;
         top: $headerHeight;
         left: 0;
         bottom: 0;
@@ -63,9 +75,11 @@ body {
         margin-top: $headerHeight;
         margin-left: $siderWidth;
         position: relative;
+        background: #e1e1e1;
 
         .container {
             position: relative;
+            padding: 20px;
             
         }
 
@@ -73,7 +87,13 @@ body {
             // position: absolute;
             // top: 0;
             // left: 0;
-            background: #e1e1e1;
+            // background: #e1e1e1;
+            background: #fff;
+            padding: 10px 20px;
+        }
+
+        .container-body {
+            margin-top: 15px;
             padding: 10px 20px;
         }
     }
@@ -86,6 +106,7 @@ body {
         background: $white;
         // width: 100%;
         padding: 10px 20px;
+        margin-left: 1px;
         border-top: 1px solid $borderColor;
         z-index: 999;
     }

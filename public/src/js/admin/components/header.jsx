@@ -1,33 +1,78 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-// export default class extends React.Component {
-//     contructor() {
-//         // super();
-//     }
+import { Layout, Menu, Dropdown, Icon } from 'antd/dist/antd';
+const { Header } = Layout;
 
-//     render() {
-//         return (
-//             <div className="navbar-branding">
-//                 <Link className="navbar-brand" to="/admin">
-//                     <b>Furuida</b> Admin System
-//                 </Link>
-//                 <span id="toggle_sidemenu_l" className="ad ad-lines">1234567890</span>
-//             </div>
-//         )
-//     }
-// }
+export class User extends Component {
+    constructor() {
+        super();
+    }
 
-export default class extends React.Component {
+    render() {
+        var userStyle = {
+            position: 'absolute',
+            top: '0',
+            right: '0',
+            padding: '0 20px'
+
+        }
+        var userImg = {
+            width: '40px',
+            height: '40px',
+            borderRadius: '20px',
+            border: '1px solid #e1e1e1',
+            margin: '12px',
+            float: 'left',
+            background: 'url(/upload/userImg/user.png)',
+            backgroundSize: 'contain'
+        }
+
+        const menu = (
+            <Menu>
+                <Menu.Item key="0">
+                    <a href="http://www.alipay.com/">个人资料</a>
+                </Menu.Item>
+                <Menu.Item key="1">
+                    <a href="http://www.taobao.com/">个人设置</a>
+                </Menu.Item>
+                <Menu.Divider />
+                <Menu.Item key="3">退出</Menu.Item>
+            </Menu>
+        );
+
+        return (
+            <div style={userStyle}>
+                <Dropdown overlay={menu} trigger={['click']}>
+                    <a className="ant-dropdown-link" href="#">
+                        <div style={userImg}></div>
+                    </a>
+                </Dropdown>
+                <div style={{float: 'left', margin: '0 12px'}}>Piny</div>
+            </div>
+        )
+    }
+}
+
+export default class extends Component {
     contructor() {
         // super();
     }
 
     render() {
+
         return (
-            <div className='title'>
-                诚安燃气
-            </div>
+            <Header className="header">
+                <div className='title'>
+                    <div style={{float: 'left', height: "100%", padding: '5px', boxSizing: 'border-box'}}>
+                        <img height="100%" src="/images/logo.png" />
+                    </div>
+                    <div style={{float: 'left'}}>
+                        江西艾麦达后台管理系统
+                    </div>
+                </div>
+                <User />
+            </Header>
         )
     }
 }

@@ -1,3 +1,7 @@
+body {
+    // font: 14px/1.5 "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Roboto, Arial, sans-serif;
+}
+
 .text-center {
     text-align: center;
 }
@@ -118,7 +122,8 @@
             padding: 10px 0;
 
             .news-item-image {
-                height: 120px;
+                // height: 120px;
+                width: 100%;
                 display: flex;
                 display: -webkit-flex;
                 align-items: flex-start;
@@ -128,10 +133,47 @@
             }
 
             .news-item-content {
-                height: 120px;
-                padding: 5px; 
+                padding-left: 15px; 
                 text-align: left;
                 box-sizing: border-box;
+                
+                p {
+                    padding-bottom: 5px;
+                }
+
+                .news-content-heading {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    text-shadow: rgba(0,0,0,.15) 0 0 1px;
+                    font-weight: 400;
+
+                    a {
+                        color: inherit;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: #4e97d9;
+                    }
+                }
+
+                .news-content-body {
+                    color: #76838f;
+                    font-weight: 300;
+                }
+
+                .news-content-footer {
+                    // overflow: hidden;
+                    padding-bottom: 0px;
+            
+                    span {
+                        // display: block;
+                        // float: left;
+                        color: #76838f;
+                        font-weight: 300;
+                        margin-right: 10px;
+                    }
+                }
             }
         }
 

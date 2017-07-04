@@ -36,8 +36,7 @@ class App extends Component {
                         minHeight: 380,
                         // border: '1px solid #e1e1e1'
                     }}>
-                        <div className="row">
-                        </div>
+                        <div className="row"></div>
                         <div className="row">
                             <Product />
                         </div>
@@ -64,9 +63,7 @@ class App extends Component {
                 </Content>
                 <Footer />
                 <div id="components-back-top-custom">
-                    <BackTop>
-
-                    </BackTop>
+                    <BackTop />
                 </div>
             </Layout>
         )

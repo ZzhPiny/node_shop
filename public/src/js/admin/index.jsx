@@ -19,6 +19,15 @@ import configureStore from './redux/config_store';
 import App from './components/app';
 import Dashboard from './components/dashboard';
 
+// Page Setting 页面设置
+import PageSetting from './components/pagesetting/index';
+import PageHome from './components/pagesetting/home';
+import PageCompany from './components/pagesetting/company';
+import PageProduction from './components/pagesetting/production';
+import PageNews from './components/pagesetting/news';
+import PageService from './components/pagesetting/service';
+import PageContact from './components/pagesetting/contact';
+
 // Product 类
 import Product from './components/product/product';
 
@@ -40,16 +49,32 @@ ReactDOM.render((
         <Router history={ history }>
             <Route path='/admin' component={ App } >
                 <IndexRoute component={ Dashboard } />
-                <Route path='product' component={ Product } >
+
+                <Route path='pagesetting' component={ PageSetting } >
+                    <IndexRoute component={ PageHome } />
+
+                    <Route path='home' component={ PageHome } />
+                    <Route path='company' component={ PageCompany } />
+                    <Route path='production' component={ PageProduction } />
+                    <Route path='news' component={ PageNews } />
+                    <Route path='service' component={ PageService } />
+                    <Route path='contact' component={ PageContact } />
+                    
+                    <Redirect from='*' to='/admin/pagesetting' />
+                </Route>
+                
+                <Route path='production' component={ Product } >
                     <Route path='classify' component={ Classify } />
                     <Route path='list' component={ List } />
                     <Route path='addproduct' component={ AddProduct } />
-                    <Redirect from='*' to='/admin/product' />
+                    <Redirect from='*' to='/admin' />
                 </Route>
+                
                 <Route path='user' component={ User } />
+                
                 <Route path='*' component={ Dashboard } />
             </Route>
             <Redirect from='*' to='/admin' />
         </Router>
     </Provider>
-), $("body")[0]);
+), document.getElementById('main'));

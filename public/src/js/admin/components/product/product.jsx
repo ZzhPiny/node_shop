@@ -32,19 +32,19 @@ export default class Product extends React.Component {
         tabType: [{
             type: 'classify',
             name: '商品分类',
-            href: '/admin/product/classify'
+            href: '/admin/production/classify'
         }, {
             type: 'list',
             name: '商品列表',
-            href: '/admin/product/list'
+            href: '/admin/production/list'
         }, {
             type: 'attr',
             name: '属性管理',
-            href: '/admin/product/attr'
+            href: '/admin/production/attr'
         }, {
             type: 'recommen',
             name: '商品推荐',
-            href: '/admin/product/recommen'
+            href: '/admin/production/recommen'
         }],
         tabShowType: 'classify' 
     };
