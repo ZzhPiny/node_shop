@@ -54,6 +54,8 @@ body {
     // position: absolute;
     // padding-top: $headerHeight;
     box-sizing: border-box;
+    background: #e1e1e1;
+
     // left: 0;
     // right: 0;
     // bottom: 0;
@@ -74,6 +76,7 @@ body {
     .content {
         margin-top: $headerHeight;
         margin-left: $siderWidth;
+        margin-bottom: 40px;
         position: relative;
         background: #e1e1e1;
 

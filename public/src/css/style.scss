@@ -35,11 +35,30 @@ body {
     padding: 0 10px;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 @media (min-width: 1600px) {
     .container {
         width: 1310px;
     }
 }
+
 
 .row-body {
     text-align: center;

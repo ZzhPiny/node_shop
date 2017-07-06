@@ -11,8 +11,8 @@ const { Content } = Layout;
 
 import '../../css/style.scss';
 
-import Header from '../tpl/header';
-import Footer from '../tpl/footer';
+import Header from '../module/header';
+import Footer from '../module/footer';
 import Banner from '../module/banner';
 import Product from '../module/productlist';
 import News from '../module/news';

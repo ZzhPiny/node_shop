@@ -33,7 +33,7 @@ class App extends React.Component {
                     <Header />
                     <Layout className='layout'>
                         <Sider className='sider' width='auto'>
-                                <Nav />
+                            <Nav />
                         </Sider>
                         <Layout className='content'>
                             <Content className='container'>

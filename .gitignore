@@ -1,5 +1,6 @@
 #common ignore file
-/node_module/*
+/node_modules/*
 /logs/*
 /public/dist/*
 /.happypack/*
+/.idea/*
