@@ -131,7 +131,6 @@ var config = {
     resolve: {
         modules: [process.cwd() + '/public/src/', process.cwd() + '/node_modules/', process.cwd() + '/public/src/js_components/'],
         alias: {
-            // 'jquery': 'jquery/dist/jquery.min.js',
             // 'underscore': 'underscore/underscore.js',
             'cryptoJs': 'crypto-js/crypto-js.js',
             // 'react': lib + 'js_components/react/react.js',
@@ -154,12 +153,7 @@ var config = {
             'webpack': 'webpack',
             'webpack-dev-server': 'webpack-dev-server',
 
-            // 'bootstrap': 'bootstrap/dist/js/bootstrap.min.js',
-            // 'swiper': 'swiper/dist/js/swiper.min.js',
-            // 'jqPaginator': 'jqPaginator/jqPaginator.min.js',
-            // 'jqueryForm': 'jquery-form/jquery.form.js',
             'module': 'js/module',
-            'tpl': 'js/tpl',
         },
         extensions: ['.js', '.html', '.jsx', '.json', '.ejs']
     },
