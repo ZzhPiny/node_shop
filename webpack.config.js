@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -158,6 +159,10 @@ var config = {
         extensions: ['.js', '.html', '.jsx', '.json', '.ejs']
     },
     plugins: webpackPlugins
+}
+
+if(os.platform() !== 'darwin' && os.platform() !== 'linux') {
+    config.resolve.extensions.unshift('');
 }
 
 module.exports = config;
