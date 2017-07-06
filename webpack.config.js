@@ -145,7 +145,7 @@ var config = {
             // 'react-router-redux': 'react-router-redux/src/index.js',
             'redux-logger': 'redux-logger/index.js',
             'redux-thunk': 'redux-thunk/redux-thunk.js',
-            'antd': 'antd/',
+            'antd': 'antd',
 
             // redux devtool
             'redux-devtools-extension': 'redux-devtools-extension/index.js',
