@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const glob = require('glob');
-const minifyCss = require('gulp-minify-css');
+const cleanCss = require('gulp-clean-css');
 const htmlreplace = require('gulp-html-replace');
 const clean = require('gulp-clean');
 const watch = require('gulp-watch');
@@ -18,7 +18,7 @@ gulp.task('css', () => {
         // .pipe(watch(path, {}, logger))
         // .pipe(rev())
         .pipe(watch(path))
-        .pipe(minifyCss())
+        .pipe(cleanCss())
         .pipe(gulp.dest('public/dist/css'))
         // .pipe( rev.manifest() )
         // .pipe( gulp.dest( 'public/rev/css' ) );

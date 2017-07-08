@@ -1,6 +1,16 @@
 #common ignore file
-/node_modules/*
-/logs/*
-/public/dist/*
-/.happypack/*
-/.idea/*
+
+/*
+
+!.gitignore
+!/bin/www
+!/config/*
+!/database/*
+!/public/src/*
+!/routes/*
+!/upload/*
+!app.js
+!.babelrc
+!package.json
+!README.md
+!webpack.config.js
