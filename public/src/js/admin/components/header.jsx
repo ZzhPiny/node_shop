@@ -64,7 +64,7 @@ export default class extends Component {
         return (
             <Header className="header">
                 <div className='title'>
-                    <div style={{float: 'left', height: "100%", padding: '5px', boxSizing: 'border-box'}}>
+                    <div style={{float: 'left', height: "100%", padding: '10px', boxSizing: 'border-box'}}>
                         <img height="100%" src="/images/logo.png" />
                     </div>
                     <div style={{float: 'left'}}>

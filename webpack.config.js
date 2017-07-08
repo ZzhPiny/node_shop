@@ -163,6 +163,8 @@ var config = {
 
 if(os.platform() !== 'darwin' && os.platform() !== 'linux') {
     config.resolve.extensions.unshift('');
+} else if(os.platform() === 'win32') {
+    config.resolve.extensions.unshift('');
 }
 
 module.exports = config;

@@ -22,6 +22,9 @@ export default class Nav extends React.Component {
             type: 'group',
             link: '/admin/pagesetting',
             children: [{
+                name: '整站设置',
+                link: '/pagesetting/fullstation',
+            }, {
                 name: '网站首页',
                 link: '/pagesetting/home',
             }, {
