@@ -6,9 +6,9 @@
 
 ##### 主要技术
 
-UI：Antd
-前端技术： React、Redux
-后端技术：Express、Mongoose、Log4js
-数据库： MongoDB
-前端构建工具：Webpack、Gulp
-Node进程守护模块： Supervisor，Pm2
+1. UI：Antd
+2. 前端技术： React、Redux
+3. 后端技术：Express、Mongoose、Log4js
+4. 数据库： MongoDB
+5. 前端构建工具：Webpack、Gulp
+6. Node进程守护模块： Supervisor，Pm2
