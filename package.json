@@ -1,6 +1,6 @@
 {
-  "name": "furuida",
-  "version": "0.0.1",
+  "name": "node_shop",
+  "version": "0.0.9",
   "private": true,
   "scripts": {
     "start": "supervisor -i public -w routes,app.js,utils,database,config ./bin/www",
@@ -16,7 +16,7 @@
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "express-session": "^1.14.2",
-    "mongoose": "^4.6.8",
+    "mongoose": "4.6.8",
     "morgan": "~1.6.1",
     "react-router-redux": "^4.0.8",
     "redux-devtools-extension": "^2.13.0",
